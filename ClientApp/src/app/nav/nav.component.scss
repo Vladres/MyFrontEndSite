@@ -1,0 +1,35 @@
+
+
+.sidenav {
+  width: 20vh;
+}
+
+a{
+  text-decoration: none;
+}
+.Title{
+  text-decoration: none;
+  color :#000;
+  font-family: 'Lobster' , cursive;
+  :hover{
+    color: #fff;
+  }
+}
+
+.Links{
+  color: #fff;
+  font-size: 1rem;
+  :hover{
+    color: #000;
+  }
+}
+.sidenav {
+  .mat-toolbar {
+    .mat-primary {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+  }
+}
+
