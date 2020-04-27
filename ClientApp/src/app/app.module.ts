@@ -11,7 +11,6 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
 import { MatDialogModule} from '@angular/material/dialog';
-import { SideNavService } from './Services/side-nav.service';
 import { BlogsComponent } from './blogs/blogs.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -19,13 +18,19 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { NavComponent } from './nav/nav.component';
+import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SliderComponent,
     BlogsComponent,
-    NavComponent
+    NavComponent,
+    FooterComponent,
+    AboutComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +47,7 @@ import { NavComponent } from './nav/nav.component';
     MatIconModule,
     MatListModule
   ],
-  providers: [ImagesService,SideNavService],
+  providers: [ImagesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

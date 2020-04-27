@@ -1,24 +1,27 @@
-
-
 .sidenav {
-  width: 20vh;
+  width: 25vh;
+}
+
+.Toolbar{
+  height: 10vh;
 }
 
 a{
   text-decoration: none;
 }
+
 .Title{
   text-decoration: none;
   color :#000;
   font-family: 'Lobster' , cursive;
-  :hover{
-    color: #fff;
-  }
 }
 
-.Links{
-  color: #fff;
-  font-size: 1rem;
+li{
+  .Links{
+    color: #fff;
+    font-size: 1rem;
+    
+  }
   :hover{
     color: #000;
   }

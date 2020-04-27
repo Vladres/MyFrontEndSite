@@ -9,13 +9,7 @@ export class BlogsComponent implements OnInit {
 
   constructor() { }
 
-  toggle : boolean = false;
-
-  
   ngOnInit(): void {
   }
 
-  switchClass(){
-    this.toggle = !this.toggle;
-  }
 }

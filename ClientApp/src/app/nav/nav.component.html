@@ -3,23 +3,22 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]   =  "(isHandset$ | async) ? 'over' : 'side'"
       position="end">
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar >Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item routerLink = "/">Home page</a>
+      <a mat-list-item href="#">Content page</a>
+      <a mat-list-item routerLink = "/about">About</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar class="d-flex" color="primary">
+    <mat-toolbar class="d-flex Toolbar" color="primary">
         <div class="p-2">
-          <a href="#" class="h2 Title">Novod Blog</a>
+          <a routerLink= "" class="h2 Title">Novod Blog</a>
         </div>
-        <div class="d-flex p-2 " *ngIf = "(IsNavbar$ | async)">
-          <ul class="list-inline align-items-center m-0">
-            <a href="#" class="list-inline-item Links"><li>Link 1</li></a>
-            <a href="#" class="list-inline-item Links"><li>Link 2</li></a>
-            <a href="#" class="list-inline-item Links"><li>Link 3</li></a>
+        <div class="d-flex p-2" *ngIf = "!(isHandset$ | async)">
+          <ul class="list-inline align-items-center m-0 justify-content-between">
+            <li class="list-inline-item "><a class="Links" href="#" >Content page</a></li>
+            <li class="list-inline-item "><a class="Links" routerLink= "/about" >About</a></li>
           </ul>
         </div>
         <div class="ml-auto p-2">
@@ -33,7 +32,7 @@
           </button>
         </div>
     </mat-toolbar>
-    <app-slider></app-slider>
-    <app-blogs></app-blogs>
+    <ng-content></ng-content>
+    <app-footer></app-footer>
   </mat-sidenav-content>
 </mat-sidenav-container>

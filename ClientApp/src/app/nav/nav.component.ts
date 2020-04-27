@@ -15,11 +15,7 @@ export class NavComponent {
       map(result => result.matches),
       shareReplay()
     );
-    IsNavbar$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
-    .pipe(
-      map(result => !result.matches),
-      shareReplay()
-    );
+    
   constructor(private breakpointObserver: BreakpointObserver) {}
 
 }
