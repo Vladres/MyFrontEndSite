@@ -1,0 +1,11 @@
+<div class="container-fluid">
+    <div class="d-flex flex-wrap justify-content-center p-1 m-1 ">
+        <div class="Blogs col-md-4 card m-2 p-1">
+            <div  *ngIf= "item">
+                <a class="h3">{{item.Title}}</a>
+                <img class="MainBlogImage" src="{{item.imgSource}}" alt="">
+                <a href = "#" class="h5">{{item.Text}}</a>
+            </div> 
+        </div> 
+    </div>
+</div>

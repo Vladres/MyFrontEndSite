@@ -23,6 +23,7 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { ArticleService } from './Services/Articles/article.service';
 import { ContentPageComponent } from './content-page/content-page.component';
+import { ItemComponent } from './item/item.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ContentPageComponent } from './content-page/content-page.component';
     FooterComponent,
     AboutComponent,
     HomeComponent,
-    ContentPageComponent
+    ContentPageComponent,
+    ItemComponent,
   ],
   imports: [
     BrowserModule,
