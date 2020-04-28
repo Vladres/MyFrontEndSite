@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Observable , of} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -11,8 +12,8 @@ export class ImagesService {
 
   constructor() { }
 
-  getImages(){
-    return this.images;
+  getImages() : Observable<string[]> {
+    return of(this.images);
   }
   addImage(value : string){
     this.images.push(value);

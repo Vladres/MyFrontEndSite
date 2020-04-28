@@ -21,6 +21,8 @@ import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
+import { ArticleService } from './Services/Articles/article.service';
+import { ContentPageComponent } from './content-page/content-page.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { HomeComponent } from './home/home.component';
     NavComponent,
     FooterComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    ContentPageComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +50,7 @@ import { HomeComponent } from './home/home.component';
     MatIconModule,
     MatListModule
   ],
-  providers: [ImagesService],
+  providers: [ImagesService,ArticleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

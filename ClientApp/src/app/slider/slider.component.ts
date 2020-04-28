@@ -13,7 +13,7 @@ export class SliderComponent implements OnInit {
   images : string[] ;
 
   ngOnInit(): void {
-    this. images = this.imagesService.getImages();
+    this.imagesService.getImages().subscribe(result => this.images = result);
   }
 
 }
