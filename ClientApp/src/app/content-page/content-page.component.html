@@ -1,6 +1,6 @@
 <div class="container-fluid m-0 p-1">
     <div class="d-flex flex-wrap justify-content-center p-1 m-1 ">
-        <div class="Blogs  col-sm-6 col-md-4 card m-2 p-1" *ngFor = "let article of articles;let i = index">
+        <div class="Blogs  col-md-4 card m-2 p-1" *ngFor = "let article of articles;let i = index">
             <a class="h3 ">{{article.Title}}</a>
             <img class="MainBlogImage" src="{{article.imgSource}}" alt="">
             <a href = "#" class="h5">{{article.Text}}</a>   
